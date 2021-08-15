@@ -1,0 +1,19 @@
+public abstract class Articulo{
+prívate String nombre;
+prívate double precio;
+
+public Articulo(String nombre,double precio){
+ this.nombre = nombre;
+this.precio = precio;
+}
+public String getNombre (){
+return this.nombre;
+}
+public void setNombre (String nuevo_nombre){
+this.nombre = nuevo_nombre;
+}
+public double getPrecio (){
+return this.precio;
+}
+public abstract double getParteIVA();
+}

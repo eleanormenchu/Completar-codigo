@@ -1,0 +1,13 @@
+
+public class Tipo16 extends Articulo{
+prívate static finaldouble TIPO = 16.0;
+public Tipo16(String nombre,double precio){
+super (nombre,precio);
+}
+public double getPrecio 0{
+return (super.getPrecio() + this.getPartelVA());
+}
+public double getPartelVA (){
+return (super.getPrecio() * TIPO / 100);
+}
+}
